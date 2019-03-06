@@ -25,21 +25,8 @@ void confetti ()
       fadeToBlackBy(leds, NUM_LEDS,10);
       int pos = random16(NUM_LEDS);
       leds[pos] += CHSV( gHue + random8(135), 200, 255);
-}
-
-void loop()
-{ 
-  fill_solid( leds, NUM_LEDS, CRGB:: Blue);
-    FastLED.show();
-    delay(30);
-}
-
-void confetti () 
-{
-  uint8_t gHue = 0; // rotating "base color"
-      fadeToBlackBy(leds, NUM_LEDS,10);
-      int pos = random16(NUM_LEDS);
-      leds[pos] += CHSV( gHue + random8(135), 200, 255);
+    delay(50);
+  
 }
 
 
